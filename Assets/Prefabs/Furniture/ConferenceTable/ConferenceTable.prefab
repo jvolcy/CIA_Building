@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7100885134590823019
+--- !u!1 &5198551809106763357
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 39560607554185471}
+  - component: {fileID: 1589479713348460532}
   m_Layer: 0
   m_Name: ConferenceTable
   m_TagString: Untagged
@@ -16,41 +16,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &39560607554185471
+--- !u!4 &1589479713348460532
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7100885134590823019}
+  m_GameObject: {fileID: 5198551809106763357}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.544508, y: 9.900001, z: -19.995829}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 838310879510792404}
+  - {fileID: 5630281210823872750}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &876229613228617535
+--- !u!1001 &5307632431166912261
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 39560607554185471}
+    m_TransformParent: {fileID: 1589479713348460532}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2e7d741b650a9473489110b8f1960e12, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.033333335
+      value: 0.04128667
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e7d741b650a9473489110b8f1960e12, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.033333335
+      value: 0.036922254
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e7d741b650a9473489110b8f1960e12, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.033333335
+      value: 0.041205093
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e7d741b650a9473489110b8f1960e12, type: 3}
       propertyPath: m_LocalPosition.x
@@ -133,8 +133,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e7d741b650a9473489110b8f1960e12, type: 3}
---- !u!4 &838310879510792404 stripped
+--- !u!4 &5630281210823872750 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2e7d741b650a9473489110b8f1960e12, type: 3}
-  m_PrefabInstance: {fileID: 876229613228617535}
+  m_PrefabInstance: {fileID: 5307632431166912261}
   m_PrefabAsset: {fileID: 0}
