@@ -24,10 +24,10 @@ public class GameManager : MonoBehaviour
         var players = GameObject.FindGameObjectsWithTag("Player");
         if (players.Length != 1)
         {
-            Debug.Log("Warning: found " + players.Length + " objects tagged as 'Player'.");
+            Debug.Log(name + " Warning: found " + players.Length + " objects tagged as 'Player'.");
         }
         player = null;
-        if (players.Length == 1) Debug.Log("Found 1 Player.");
+        if (players.Length == 1) Debug.Log(name + " Found 1 Player.");
         if (players.Length > 0) player = players[0];
     }
 

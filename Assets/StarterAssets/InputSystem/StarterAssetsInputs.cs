@@ -21,6 +21,10 @@ namespace StarterAssets
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
 
+		public Elevator Elevator1;
+		public Elevator Elevator2;
+		public Elevator Elevator3;
+
 #if ENABLE_INPUT_SYSTEM
 
 		public int TimeoutMinutes = 10;
@@ -96,6 +100,34 @@ namespace StarterAssets
 		private void SetCursorState(bool newState)
 		{
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+		}
+
+		public void OnElevatorOpen()
+		{
+			Elevator1.ElevatorOpen();
+			Elevator2.ElevatorOpen();
+			Elevator3.ElevatorOpen();
+		}
+
+		public void OnElevatorClose()
+		{
+			Elevator1.ElevatorClose();
+			Elevator2.ElevatorClose();
+			Elevator3.ElevatorClose();
+		}
+
+		public void OnElevatorUp()
+		{
+			Elevator1.ElevatorUp();
+			Elevator2.ElevatorUp();
+			Elevator3.ElevatorUp();
+		}
+
+		public void OnElevatorDown()
+		{
+			Elevator1.ElevatorDown();
+			Elevator2.ElevatorDown();
+			Elevator3.ElevatorDown();
 		}
 	}
 	
