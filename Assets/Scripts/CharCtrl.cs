@@ -6,6 +6,10 @@ public class CharCtrl : MonoBehaviour
 {
     [SerializeField] Transform StartingPlayerPosition;
 
+    public Elevator Elevator1;
+    public Elevator Elevator2;
+    public Elevator Elevator3;
+
     GameManager gameManager;
     // Start is called before the first frame update
     void Start()
@@ -40,4 +44,31 @@ public class CharCtrl : MonoBehaviour
         gameManager.YButtonPressed();
     }
 
+    public void OnElevatorOpen()
+    {
+        Elevator1.ElevatorOpen();
+        Elevator2.ElevatorOpen();
+        Elevator3.ElevatorOpen();
+    }
+
+    public void OnElevatorClose()
+    {
+        Elevator1.ElevatorClose();
+        Elevator2.ElevatorClose();
+        Elevator3.ElevatorClose();
+    }
+
+    public void OnElevatorUp()
+    {
+        Elevator1.ElevatorUp();
+        Elevator2.ElevatorUp();
+        Elevator3.ElevatorUp();
+    }
+
+    public void OnElevatorDown()
+    {
+        Elevator1.ElevatorDown();
+        Elevator2.ElevatorDown();
+        Elevator3.ElevatorDown();
+    }
 }
