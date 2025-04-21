@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ElevatorEntrance : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class ElevatorEntrance : MonoBehaviour
     public Elevator elevator;   //automatically set by the parent <Elevator> object
     public int floorIndex = 0;
     public float YOffset = 0.1f;
+
+    public enum ElevatorEntranceState { Entered, Exited }
+    public UnityEvent<ElevatorEntrance, ElevatorEntranceState> ElevatorEntranceStateChange;
 
     // Start is called before the first frame update
     void Start()
@@ -43,12 +47,14 @@ public class ElevatorEntrance : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        elevator.ElevatorEntranceEntered(this);
+        //elevator.ElevatorEntranceEntered(this);
+        ElevatorEntranceStateChange.Invoke(this, ElevatorEntranceState.Entered);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        elevator.ElevatorEntranceExited(this);
+        //elevator.ElevatorEntranceExited(this);
+        ElevatorEntranceStateChange.Invoke(this, ElevatorEntranceState.Exited);
     }
 
 }

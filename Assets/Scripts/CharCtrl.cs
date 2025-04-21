@@ -36,11 +36,17 @@ public class CharCtrl : MonoBehaviour
 
     public void OnXButton()
     {
+        //ignore the X button if we are in the elevator
+        if (InElevator()) return;
+
         gameManager.XButtonPressed();
     }
 
     public void OnYButton()
     {
+        //ignore the Y button if we are in the elevator
+        if (InElevator()) return;
+
         gameManager.YButtonPressed();
     }
 
@@ -71,4 +77,14 @@ public class CharCtrl : MonoBehaviour
         Elevator2.ElevatorDown();
         Elevator3.ElevatorDown();
     }
+
+    bool InElevator()
+    {
+        if (Elevator1.elevatorState == Elevator.ElevatorState.IN_ELEVATOR || Elevator1.elevatorState == Elevator.ElevatorState.AT_ENTRANCE) return true;
+        if (Elevator2.elevatorState == Elevator.ElevatorState.IN_ELEVATOR || Elevator2.elevatorState == Elevator.ElevatorState.AT_ENTRANCE) return true;
+        if (Elevator3.elevatorState == Elevator.ElevatorState.IN_ELEVATOR || Elevator3.elevatorState == Elevator.ElevatorState.AT_ENTRANCE) return true;
+        return false;
+    }
+
+
 }
