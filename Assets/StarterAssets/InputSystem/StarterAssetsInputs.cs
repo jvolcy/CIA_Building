@@ -22,6 +22,9 @@ namespace StarterAssets
 		public bool cursorInputForLook = true;
 
 
+		public Elevator Elevator1;
+		public Elevator Elevator2;
+		public Elevator Elevator3;
 
 #if ENABLE_INPUT_SYSTEM
 
@@ -60,6 +63,7 @@ namespace StarterAssets
 
 		public void OnJump(InputValue value)
 		{
+			if (InElevator()) return;
 			JumpInput(value.isPressed);
 		}
 
@@ -100,7 +104,16 @@ namespace StarterAssets
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
 		}
 
-		
+
+		bool InElevator()
+		{
+			if (Elevator1.elevatorState == Elevator.ElevatorState.IN_ELEVATOR || Elevator1.elevatorState == Elevator.ElevatorState.AT_ENTRANCE) return true;
+			if (Elevator2.elevatorState == Elevator.ElevatorState.IN_ELEVATOR || Elevator2.elevatorState == Elevator.ElevatorState.AT_ENTRANCE) return true;
+			if (Elevator3.elevatorState == Elevator.ElevatorState.IN_ELEVATOR || Elevator3.elevatorState == Elevator.ElevatorState.AT_ENTRANCE) return true;
+			return false;
+		}
+
+
 	}
-	
+
 }
