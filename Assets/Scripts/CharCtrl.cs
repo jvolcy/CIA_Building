@@ -15,7 +15,11 @@ public class CharCtrl : MonoBehaviour
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
+        reset();
+    }
 
+    public void reset()
+    {
         //Set the player's position
         SetPosition(StartingPlayerPosition);
     }

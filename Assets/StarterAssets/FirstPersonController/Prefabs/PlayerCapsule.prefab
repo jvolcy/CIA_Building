@@ -158,8 +158,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.68285835
-  m_Center: {x: 0, y: 0.39000002, z: 0.600758}
+  m_Radius: 0.35
+  m_Center: {x: 0, y: 0.39000002, z: 0.78}
 --- !u!1 &8616685848737228372
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,6 +289,9 @@ MonoBehaviour:
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1
+  Elevator1: {fileID: 0}
+  Elevator2: {fileID: 0}
+  Elevator3: {fileID: 0}
   TimeoutMinutes: 10
 --- !u!114 &8616685848737228376
 MonoBehaviour:

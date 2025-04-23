@@ -42,7 +42,7 @@ namespace StarterAssets
 			resetCounter++;
 			if (resetCounter == TimeoutMinutes)
 			{
-				SceneManager.LoadScene(0);
+				GetComponent<CharCtrl>().reset();
 			}
 		}
 

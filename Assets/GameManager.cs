@@ -76,22 +76,10 @@ public class GameManager : MonoBehaviour
             case ResetState.RESET_REQUESTED:
                 //user has confirmed the reset
                 PanelResetPopUp.SetActive(false);
-                reset();
+                player.GetComponent<CharCtrl>().reset();
                 resetState = ResetState.PLAYING;
                 break;
         }
     }
 
-    private void reset()
-    {
-        SceneManager.LoadScene(0);
-        /*
-        player.SetActive(false);
-        player.transform.position = StartingPlayerPosition.position;
-        player.transform.rotation = StartingPlayerPosition.rotation;
-        player.SetActive(true);
-        Debug.Log("Player position reset");
-        */
-        
-    }
 }
