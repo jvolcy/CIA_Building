@@ -42,7 +42,7 @@ namespace StarterAssets
 			resetCounter++;
 			if (resetCounter == TimeoutMinutes)
 			{
-				SceneManager.LoadScene(0);
+				GetComponent<CharCtrl>().reset();
 			}
 		}
 
@@ -63,6 +63,9 @@ namespace StarterAssets
 
 		public void OnJump(InputValue value)
 		{
+			//disable jumping
+			return;
+
 			if (InElevator()) return;
 			JumpInput(value.isPressed);
 		}
