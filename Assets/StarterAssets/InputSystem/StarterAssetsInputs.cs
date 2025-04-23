@@ -63,6 +63,9 @@ namespace StarterAssets
 
 		public void OnJump(InputValue value)
 		{
+			//disable jumping
+			return;
+
 			if (InElevator()) return;
 			JumpInput(value.isPressed);
 		}
