@@ -94,6 +94,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Quit",
+                    "type": "Button",
+                    "id": "ab4d127d-4498-4485-9aa9-f69dbf045bef",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -331,7 +340,7 @@
                 {
                     "name": "",
                     "id": "573f1a72-848f-4ba0-91a3-45d4af421a9e",
-                    "path": "<Keyboard>/u",
+                    "path": "<Keyboard>/y",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -353,7 +362,7 @@
                 {
                     "name": "",
                     "id": "55587834-7501-4b36-af19-36ad9c4e26b8",
-                    "path": "<Keyboard>/j",
+                    "path": "<Keyboard>/h",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -375,7 +384,7 @@
                 {
                     "name": "",
                     "id": "4d6e6eca-546b-497d-9722-0b4391989a6e",
-                    "path": "<Keyboard>/h",
+                    "path": "<Keyboard>/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -397,11 +406,22 @@
                 {
                     "name": "",
                     "id": "9b379ae2-86f1-4631-ade1-56f4b812fc6d",
-                    "path": "<Keyboard>/k",
+                    "path": "<Keyboard>/b",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "ElevatorClose",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ebeae662-0742-4fb5-9165-ef93645543cd",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Quit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

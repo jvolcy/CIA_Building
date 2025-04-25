@@ -32,10 +32,9 @@ public class CharCtrl : MonoBehaviour
         gameObject.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnQuit()
     {
-        
+        Application.Quit();
     }
 
     public void OnXButton()
