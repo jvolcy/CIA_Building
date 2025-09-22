@@ -1,3 +1,8 @@
+[Building Model]
+Download building model from here:
+https://drive.google.com/file/d/1KD5e0A24xerIUJgx7i2IXCD1llJjnuFC/view?usp=drive_link
+Add this to the Assets/CI&A5A folder
+
 [Exterior Building Brick]
 Bricks 035
 https://ambientcg.com/a/Bricks035
